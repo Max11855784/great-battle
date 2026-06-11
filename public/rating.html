@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Battle Rating</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="lobby-page">
+  <div class="lobby-container">
+    <header class="lobby-header">
+      <div class="header-content">
+        <h1>PLAYER RATING</h1>
+
+        <div class="user-info">
+          <a class="nav-link" href="/lobby">Lobby</a>
+          <a class="nav-link" href="/cards">Cards Library</a>
+          <a class="nav-link" href="/profile">Profile</a>
+          <button class="logout-btn" id="logout-btn">DISCONNECT</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="lobby-main">
+      <section class="rating-panel">
+        <h2>Leaderboard by Wins</h2>
+        <p class="search-subtitle">
+          Players are ranked only by the number of won battles.
+        </p>
+
+        <div class="rating-table-wrap">
+          <table class="rating-table">
+            <thead>
+              <tr>
+                <th>Place</th>
+                <th>Avatar</th>
+                <th>Login</th>
+                <th>Wins</th>
+              </tr>
+            </thead>
+            <tbody id="rating-body">
+              <tr>
+                <td colspan="4">Loading rating...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="form-error" id="rating-error"></div>
+      </section>
+    </main>
+
+    <div class="auth-background">
+      <div class="grid-overlay"></div>
+      <div class="scanlines"></div>
+    </div>
+  </div>
+
+  <script src="/js/rating.js"></script>
+</body>
+
+</html>

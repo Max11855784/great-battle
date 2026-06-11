@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Battle Lobby</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="lobby-page">
+  <div class="lobby-container">
+    <header class="lobby-header">
+      <div class="header-content">
+        <h1>COMMAND CENTER</h1>
+
+        <div class="user-info">
+          <img id="user-avatar" class="small-avatar" src="" alt="User avatar">
+          <span id="user-name" class="user-name">Loading...</span>
+          <button class="logout-btn" id="logout-btn">DISCONNECT</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="lobby-main">
+      <div class="search-panel">
+        <h2>FIND OPPONENT</h2>
+        <p class="search-subtitle">
+          Automatic WebSocket matchmaking between two real online players.
+        </p>
+
+        <button class="search-btn btn-primary" id="find-battle-btn">
+          FIND BATTLE
+        </button>
+
+        <button class="search-btn btn-secondary" id="practice-ai-btn" style="margin-top: 1rem;">
+          PRACTICE VS AI
+        </button>
+
+        <button class="search-btn btn-secondary" id="cancel-battle-btn" style="display: none; margin-top: 1rem;">
+          CANCEL
+        </button>
+
+        <div class="search-status" id="search-status" style="display: none; margin-top: 1.5rem;">
+          <p id="status-message">Waiting for opponent...</p>
+        </div>
+
+        <div class="lobby-links">
+          <a href="/cards">Cards Library</a>
+          <a href="/profile">Profile</a>
+          <a href="/rating">Rating</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="auth-background">
+      <div class="grid-overlay"></div>
+      <div class="scanlines"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/lobby.js"></script>
+</body>
+
+</html>

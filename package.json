@@ -1,0 +1,16 @@
+{
+  "name": "great-battle",
+  "version": "1.0.0",
+  "description": "Race 01 Great Battle - Marvel card battle game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.9.7",
+    "openai": "^6.38.0",
+    "socket.io": "^4.7.5"
+  }
+}

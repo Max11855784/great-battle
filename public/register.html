@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Battle Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="auth-page">
+  <div class="auth-container auth-container-wide">
+    <div class="auth-panel">
+      <h1 class="auth-title">CREATE PROFILE</h1>
+      <p class="auth-subtitle">Choose your login, password and avatar</p>
+
+      <form class="auth-form" id="register-form">
+        <div class="form-group">
+          <label for="login">Login:</label>
+          <input type="text" id="login" name="login" placeholder="Choose unique login" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm password:</label>
+          <input type="password" id="confirm-password" name="confirmPassword" placeholder="Repeat password" required>
+        </div>
+
+        <div class="form-group">
+          <label>Avatar:</label>
+
+          <div class="avatar-grid">
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="men" checked>
+              <img src="/images/avatars/avatar_men.png" alt="Man avatar">
+              <span>Men</span>
+            </label>
+
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="women">
+              <img src="/images/avatars/avatar_women.png" alt="Woman avatar">
+              <span>Women</span>
+            </label>
+
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="gasmask">
+              <img src="/images/avatars/avatar_gasmask.png" alt="Gasmask avatar">
+              <span>Gasmask</span>
+            </label>
+
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="helmet">
+              <img src="/images/avatars/avatar_helmet.png" alt="Helmet avatar">
+              <span>Helmet</span>
+            </label>
+
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="mystic">
+              <img src="/images/avatars/avatar_mystic.png" alt="Mystic avatar">
+              <span>Mystic</span>
+            </label>
+
+            <label class="avatar-option">
+              <input type="radio" name="avatarCode" value="glasses">
+              <img src="/images/avatars/avatar_glasses.png" alt="Glasses avatar">
+              <span>Glasses</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-error" id="register-error"></div>
+
+        <button type="submit" class="auth-btn btn-primary">CREATE PROFILE</button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Already registered? <a href="/login">Login</a></p>
+        <p><a href="/">Back to main page</a></p>
+      </div>
+    </div>
+
+    <div class="auth-background">
+      <div class="grid-overlay"></div>
+      <div class="scanlines"></div>
+    </div>
+  </div>
+
+  <script src="/js/register.js"></script>
+</body>
+
+</html>
