@@ -408,9 +408,3 @@ This project was created to practice:
 * Modular backend structure
 * Game logic implementation
 * Basic AI opponent logic
-
----
-
-## Author
-
-Maksym Rusanov
